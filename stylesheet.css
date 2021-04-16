@@ -52,9 +52,14 @@ a {
   opacity: 0.65;
 }
 
+.content {
+  background: rgb(224, 222, 222); /* Fallback color */
+  background: rgb(8, 0, 0);
+}
+
 .top-wrapper h1 {
   position: relative;
-  color: black;
+  color: white;
   opacity: 0.9;
   font-size: 45px;
   letter-spacing: 5px;
@@ -64,10 +69,9 @@ a {
 
 .top-wrapper p {
   margin-bottom: 3px;
-  font-weight: bold;
   position: relative;
   text-align: center;
-  color: black;
+  color: white;
 }
 
 /*.top-wrapper h1 {
