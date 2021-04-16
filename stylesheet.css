@@ -147,6 +147,7 @@ header {
 .header-left p {
   float: left;
   padding-left: 10px;
+  padding-top: 10px;
   color: white;
 }
 
@@ -258,11 +259,12 @@ footer p {
   font-size: 12px;
   position: relative;
   text-align: initial;
+  padding-left: 25px;
 }
 
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: #3b5998;
+  background-color: rgba(34, 49, 52, 0.9);
 }
 
