@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lucida Grande";
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl7CPX27xIjLe0mmnU5J4tJDVTxtDlvC_5YQ&usqp=CAU);
+  background-size: cover;
+}
+
+.heading {
+  /*text-align: center;
+  font-size: 50px;
+  letter-spacing: 1px;
+  padding: 100px;
+  color: black;*/
+  position: relative;
+  padding: 100px;
+  color: rgba(34, 49, 52, 0.9);
+  opacity: 0.9;
+  font-size: 45px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.para {
+  position: relative;
+  padding: 1px;
+  color: rgba(34, 49, 52, 0.9);
+  opacity: 0.9;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gallery-image {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 200px;
+  width: 250px;
+  transform: scale(1);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 200px;
+  width: 250px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 30px;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 50px;
+  margin-top: 10px;
+  float: left;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-left p {
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  color: white;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Add CSS for menu-icon */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 5px;
+  /* Change the display property to none */
+  display: none;
+}
+
+footer img {
+  width: 100px;
+  position: relative;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+  position: relative;
+  text-align: initial;
+  padding-left: 25px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: rgba(34, 49, 52, 0.9);
+}

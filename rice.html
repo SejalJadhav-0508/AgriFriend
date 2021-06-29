@@ -1,0 +1,238 @@
+<html><head> 
+    <title>Rice</title> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet"> 
+    <link rel="stylesheet" href="gallery.css"> 
+   <style type="text/css" id="dcoder_stylesheet">* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Lucida Grande";
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl7CPX27xIjLe0mmnU5J4tJDVTxtDlvC_5YQ&usqp=CAU);
+    background-size: cover;
+  }
+  
+  .heading {
+    text-align: center;
+    font-size: 5em;
+    letter-spacing: 1px;
+    padding: 100px;
+    color: black;
+  }
+  
+  .gallery-image {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 200px;
+    width: 250px;
+    transform: scale(1);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 200px;
+    width: 250px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img {
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 30px;
+  
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+  
+  header {
+    height: 65px;
+    width: 100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-top: 10px;
+    float: left;
+  }
+  
+  .header-left {
+    float: left;
+  }
+  
+  .header-left p {
+    float: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+    margin-right: -25px;
+  }
+  
+  .header-right a {
+    line-height: 65px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+  }
+  
+  .header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Add CSS for menu-icon */
+  .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 5px;
+    /* Change the display property to none */
+    display: none;
+  }
+  
+  footer img {
+    width: 100px;
+    position: relative;
+  }
+  
+  footer p {
+    color: #b3aeb5;
+    font-size: 12px;
+    position: relative;
+    text-align: initial;
+    padding-left: 25px;
+  }
+  
+  footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgba(34, 49, 52, 0.9);
+  }</style></head> 
+   <body> 
+    <header> 
+     <div class="container"> 
+      <div class="header-left"> 
+       <img class="logo" src="https://img.freepik.com/free-vector/farm-fresh-organic-icon_53876-40456.jpg?size=626&amp;ext=jpg"> 
+       <p>AgriFriend</p> 
+      </div> 
+      <!-- Add a menu icon here --> 
+      <span class="fa fa-bars menu-icon"></span> 
+      <div class="header-right"> 
+       <a href="#">Home</a> 
+       <a href="#">About Us</a> 
+       <a href="#">Contact</a> 
+       <a href="#">Sign in</a> 
+       <a href="#" class="login">Log in</a> 
+      </div> 
+     </div> 
+    </header> 
+    <p class="heading">Rice</p> 
+
+    
+    <h3>&emsp; About Rice</h3>
+    <p>&emsp; </p>
+    <p class="para">
+      &emsp;India is an important centre of rice cultivation. The rice is cultivated on the largest areas in India. Historians believe that while the indica variety of rice was first domesticated in the area covering the foothills of the Eastern Himalayas (i.e. north-eastern India), stretching through Burma, Thailand, Laos, Vietnam and Southern China, the japonica variety was domesticated from wild rice in southern China which was introduced to India. Perennial wild rice still grow in Assam and Nepal. It seems to have appeared around 1400 BC in southern India after its domestication in the northern plains. It then spread to all the fertile alluvial plains watered by rivers. Some says that the word rice is derived from the Tamil word arisi.
+    </p>
+
+    <p>&emsp; </p>
+    <h3>&emsp;Climate requirement</h3>
+    <p>&emsp; </p>
+    <p>&emsp;In India rice is grown under widely varying conditions of altitude and climate. Rice cultivation in India extends from 8 to35ºN latitude and from sea level to as high as 3000 meters. Rice crop needs a hot and humid climate. It is best suited to regions which have high humidity, prolonged sunshine and an assured supply of water. The average temperature required throughout the life period of the crop ranges from 21 to 37º C. Maximum temp which the crop can tolerate 400C to 42 0C.</p>
+    <p class="para">
+      &emsp;
+      
+    </p>
+    
+    <p>&emsp; </p>
+    <h3>&emsp; Nutritional value of Rice</h3>
+    <p>&emsp; </p>
+    <p>&emsp;Rice is a nutritional staple food which provides instant energy as its most important component is carbohydrate (starch). On the other hand, rice is poor in nitrogenous substances with average composition of these substances being only 8 per cent and fat content or lipids only negligible, i.e., 1per cent and due to this reason it is considered as a complete food for eating. Rice flour is rich in starch and is used for making various food materials </p>
+    <p class="para">
+      &emsp;
+      
+    </p>
+
+    <p>&emsp; </p>
+    <h3>&emsp; Crop Production Practices</h3>
+    <p>&emsp; </p>
+    <p class="para">
+      In India Rice is mainly grown in two types of soils i.e., (i) uplands and (ii) low lands. The method of cultivation of rice in a particular region depends largely on factors such as situation of land, type of soils, irrigation facilities, availability of labourers intensity and distribution of rainfalls. The crop of rice is grown with the following methods
+Dry or Semi-dry upland cultivation
+Broadcasting the seedSowing the seed behind the plough or drillingWet or lowland cultivation
+Transplanting in puddled fields.Broadcasting sprouted seeds in puddled fields.
+    </p>
+    
+    <p>&emsp; </p>
+    <h3>&emsp; Selection of Seeds</h3>
+    <p>&emsp; </p>
+    <p class="para">
+      &emsp;
+      The use of quality seeds in cultivation of rice is an important factor to get better crop yield. Therefore, proper care has to be taken in selecting seeds of the best quality. Much of the success in raising the healthy seedlings depends on the quality of seed. Seeds intended for sowing should satisfy the following requirements
+The seed should belong to the proper variety, which is proposed to be grown.The seed should be clean and free from obvious mixtures of other seeds.The seed should be mature, well developed and plump in size.The seed should be free from obvious signs of age or bad storage.The seed should have a high germinating capacity.Before sowing the seed should be treated with fungicides which protects the seed against soil-born fungi and also give a boost to the seedlings.
+    </p>
+   
+    <footer> 
+     <div class="container"> 
+      <img src="https://img.freepik.com/free-vector/farm-fresh-organic-icon_53876-40456.jpg?size=626&amp;ext=jpg"> 
+      <p>AgriFriend</p> 
+     </div> 
+    </footer> 
+   
+  </body></html>

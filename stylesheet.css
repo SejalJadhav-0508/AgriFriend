@@ -69,6 +69,7 @@ a {
 
 .top-wrapper p {
   margin-bottom: 3px;
+
   position: relative;
   text-align: center;
   color: white;
@@ -265,6 +266,6 @@ footer p {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
-  background-color: rgba(34, 49, 52, 0.9);
+  background-color: rgba(34, 49, 52, 0.9); /*3b5998*/
+  height: fit-content;
 }
-
